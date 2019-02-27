@@ -14,6 +14,124 @@
     <link rel="icon" href="picture/tax_icon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="picture/tax_icon.png" type="image/x-icon" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* body {
+                color: #fff;
+                background: #676d79;
+                line-height: 25px;
+                font-family: Chalkduster, fantasy;
+            } */
+        
+        @media only screen and (min-width:0px) {
+            body {
+                font-size: 12px;
+            }
+            .button_img img {
+                width: 40px;
+            }
+        }
+        
+        @media only screen and (min-width:480px) {
+            body {
+                font-size: 14px;
+            }
+            .button_img img {
+                width: 60px;
+            }
+        }
+        
+        @media only screen and (min-width:768px) {
+            body {
+                font-size: 14px;
+            }
+            .button_img img {
+                width: 80px;
+            }
+        }
+        
+        @media only screen and (min-width:992px) {
+            body {
+                font-size: 14px;
+            }
+            .button_img img {
+                width: 100px;
+            }
+            /* .news_button{
+                    height: 291.28px;
+                    
+                } */
+        }
+        
+        @media only screen and (min-width:1200px) {
+            body {
+                font-size: 18px;
+            }
+            .button_img img {
+                width: 120px;
+            }
+            /* .news_button{
+                    height: 291.28px;
+                    
+                } */
+        }
+        
+        .news_page {
+            width: 80vw;
+            /* height: 100vh; */
+            /* background: #e3e9ee; */
+        }
+        
+        .news_content {
+            height: 380px;
+            display: flex;
+            align-items: center;
+            vertical-align: center;
+        }
+        
+        .news_content p+p {
+            display: none;
+            transition: all 2s;
+        }
+        
+        .button_img img:hover {
+            cursor: pointer
+        }
+        
+        .news_button {
+            display: flex;
+            align-items: flex-end;
+            vertical-align: center;
+            justify-content: space-around
+        }
+        
+        .onShow {
+            /* animation: show_animation 1s; */
+            display: block !important;
+            /* transition: all 1s; */
+        }
+        
+        .onhide {
+            display: none !important;
+            /* animation: hide_animation 1s; */
+            /* transition: all 1s; */
+        }
+        
+        .button_img {
+            opacity: 0.4;
+            transition: all 0.3s
+        }
+        
+        .button_img:hover {
+            opacity: 1;
+            transition: all 0.3s
+        }
+        
+        .img_opacity {
+            opacity: 1 !important;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -69,10 +187,137 @@
                         <h4><i>name and time</i></h4>
                     </header>
                     <p>Text goes here</p>
+                    <p>Text goes here</p>
+
+                    <div class="news_page">
+                        <div class="news_box container">
+                            <div class="news_content_box">
+                                <div class="news_content">
+                                    <div class="p_class" id="p_one">
+
+                                        <h3>For students</h3>
+                                        <!-- <img src="picture/student_table.png"></img> -->
+                                        <table id="benefit_for_elderly">
+                                            <tr>
+                                                <th>2019-2020</th>
+                                                <th>2018-2019</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Extra allowance equivalent to <b>one month</b> of the standard rate of Comprehensive Social Security Assistance, Old Age Allowance, Old Age Living Allowance or Disability Allowance</td>
+                                                <td>Extra allowance equivalent to <b>two months</b> of the standard rate of Comprehensive Social Security Assistance, Old Age Allowance, Old Age Living Allowance or Disability Allowance</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A <b>one-off additional $1,000</b> in vouchers for people who are eligible for the Elderly Health Care Voucher Scheme
+                                                </td>
+                                                <td>A <b>one-off additional $1,000</b> in vouchers for people who are eligible for the Elderly Health Care Voucher Scheme
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>The accumulation limit of the Elderly Health Care Voucher Scheme <b>increase to $8,000</b>
+                                                </td>
+                                                <td>The accumulation limit raises to <b>$5,000</b>, which originally is $4,000.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="p_class onhide" id="p_two">
+                                        <h3>For workers/taxpayers</h3>
+                                        <table id="benefit_for_taxpayers">
+                                            <tr>
+                                                <th>2019-2020</th>
+                                                <th>2018-2019</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>A 75% deduction of salaries tax and income tax which the allowance ceiling is <b>$20,000</b>.</td>
+                                                <td>A 75% deduction of salaries and income tax which the allowance ceiling is <b>$30,000</b>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rate concession
+                                                    <ul>
+                                                        <li>Offset the rates payable for the four quarters</li>
+                                                        <li>The subject to a ceiling <b>$1500, total $6000</b> for four quarters</li>
+                                                    </ul>
+                                                </td>
+                                                <td>Rate concession
+                                                    <ul>
+                                                        <li>Offset the rates payable for the four quarters</li>
+                                                        <li>The subject to a ceiling <b>$2500, total $10000</b> for four quarters</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+
+                                    <div class="p_class onhide" id="p_three">
+                                        <h3>For Elderly</h3>
+                                        <table id="benefit_for_elderly">
+                                            <tr>
+                                                <th>2019-2020</th>
+                                                <th>2018-2019</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Extra allowance equivalent to <b>one month</b> of the standard rate of Comprehensive Social Security Assistance, Old Age Allowance, Old Age Living Allowance or Disability Allowance</td>
+                                                <td>Extra allowance equivalent to <b>two months</b> of the standard rate of Comprehensive Social Security Assistance, Old Age Allowance, Old Age Living Allowance or Disability Allowance</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A <b>one-off additional $1,000</b> in vouchers for people who are eligible for the Elderly Health Care Voucher Scheme
+                                                </td>
+                                                <td>A <b>one-off additional $1,000</b> in vouchers for people who are eligible for the Elderly Health Care Voucher Scheme
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>The accumulation limit of the Elderly Health Care Voucher Scheme <b>increase to $8,000</b>
+                                                </td>
+                                                <td>The accumulation limit raises to <b>$5,000</b>, which originally is $4,000.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- <p class="p_class" id="p_four">Ut iaculis imperdiet tortor, ac scelerisque nulla sagittis sit amet. Etiam lobortis tortor mi, at blandit turpis elementum vitae. Aliquam non velit leo. Nam pulvinar fringilla odio, in dapibus felis vestibulum ut. Vestibulum
+                                        tristique velit lorem, interdum placerat ante ultrices id. Quisque turpis libero, pulvinar non dapibus quis, viverra sed lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        In at tempus risus, a pellentesque lacus. Donec pharetra ultrices diam sit amet dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed auctor faucibus dolor ac dictum. Sed lobortis aliquet tortor
+                                        id ornare. Praesent feugiat ornare vehicula.
+                                    </p>
+                                    <p class="p_class" id="p_five">Curabitur ac tristique dolor. Maecenas vitae commodo augue, at tincidunt erat. Sed mi tortor, bibendum quis vestibulum non, volutpat tempus eros. Donec consequat orci in erat vulputate, eu pretium est euismod. Nullam
+                                        non blandit sem, non vehicula lectus. Etiam egestas sem pulvinar felis feugiat tempus. Nunc viverra facilisis tortor, vel pretium felis vulputate ac. Proin mollis et elit eget interdum.
+                                    </p> -->
+                                </div>
+                            </div>
+                            <div id="newButton" class="news_button">
+                                <div class="button_img img_opacity">
+                                    <img class="pic_one" src="./picture/student.png" alt="">
+                                </div>
+                                <div class="button_img">
+                                    <img class="pic_two" src="./picture/Worker.png" alt="">
+                                </div>
+                                <div class="button_img">
+                                    <img class="pic_three" src="./picture/1elderly.png" alt="">
+                                </div>
+                                <!-- <div class="button_img">
+                                    <img class="pic_four" src="./picture/4.png" alt="">
+                                </div>
+                                <div class="button_img">
+                                    <img class="pic_five" src="./picture/5.png" alt="">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div id="highcharts-5BPQvFACa">
+                        <script src="https://cloud.highcharts.com/inject/5BPQvFACa/" defer="defer"></script>
+                    </div>
+                    <br><br>
                     <span class="image main"><img src="tax_light.png" style="position:center"></img></span>
                     <ul class="actions">
                         <li><a href="generic.html" class="button primary fit">View this post in TYR website</a></li>
-                        <li><a href="generic.html" class="button fit">Back to the main page</a></li>
+                        <li><a href="index.html" class="button fit">Back to the main page</a></li>
                     </ul>
                 </div>
 
@@ -106,6 +351,84 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var newButton = document.getElementById('newButton');
+        var p_one = document.getElementById('p_one');
+        var p_two = document.getElementById('p_two');
+        var p_three = document.getElementById('p_three');
+        var p_four = document.getElementById('p_four');
+        var p_five = document.getElementById('p_five');
+        var button_img = document.querySelectorAll('.button_img');
+        var p_class = document.querySelectorAll('.p_class');
+        newButton.addEventListener('click', function(ev) {
+            let Target = ev.target || window.event.target;
+            switch (Target.className) {
+                case 'pic_one':
+                    for (var i = 0; i < p_class.length; i++) {
+                        p_class[i].setAttribute('class', 'onhide');
+                    }
+                    p_one.setAttribute('class', 'onShow');
+                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+                        for (var i = 0; i < button_img.length; i++) {
+                            button_img[i].setAttribute('class', 'button_img');
+                        }
+                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
+                    }
+                    // console.log(Target.parentNode.className.indexOf('button_img'));
+                    break;
+                case 'pic_two':
+                    for (var i = 0; i < p_class.length; i++) {
+                        p_class[i].setAttribute('class', 'onhide');
+                    }
+                    p_two.setAttribute('class', 'onShow');
+                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+
+                        for (var i = 0; i < button_img.length; i++) {
+                            button_img[i].setAttribute('class', 'button_img');
+                        }
+                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
+                    }
+                    break;
+                case 'pic_three':
+                    for (var i = 0; i < p_class.length; i++) {
+                        p_class[i].setAttribute('class', 'onhide');
+                    }
+                    p_three.setAttribute('class', 'onShow');
+                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+                        for (var i = 0; i < button_img.length; i++) {
+                            button_img[i].setAttribute('class', 'button_img');
+                        }
+                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
+                    }
+                    break;
+                case 'pic_four':
+                    for (var i = 0; i < p_class.length; i++) {
+                        p_class[i].setAttribute('class', 'onhide');
+                    }
+                    p_four.setAttribute('class', 'onShow');
+                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+                        for (var i = 0; i < button_img.length; i++) {
+                            button_img[i].setAttribute('class', 'button_img');
+                        }
+                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
+                    }
+                    break;
+                case 'pic_five':
+                    for (var i = 0; i < p_class.length; i++) {
+                        p_class[i].setAttribute('class', 'onhide');
+                    }
+                    p_five.setAttribute('class', 'onShow');
+                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+                        for (var i = 0; i < button_img.length; i++) {
+                            button_img[i].setAttribute('class', 'button_img');
+                        }
+                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
+                    }
+                    break;
+            }
+
+        })
+    </script>
 
 </body>
 
