@@ -18,7 +18,7 @@ var chart = Highcharts.chart('Personnel', {
 		text: 'Source: Hospital Authority Annual Report 2017-2018'
 	},
 	tooltip: {
-		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+		pointFormat: '<b>{point.percentage:.1f}%</b>'
 	},
 	plotOptions: {
 		pie: {
