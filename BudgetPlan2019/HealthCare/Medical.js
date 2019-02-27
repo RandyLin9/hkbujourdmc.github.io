@@ -4,10 +4,10 @@ Highcharts.chart('Medical', {
     type: 'column'
   },
   title: {
-    text: 'Increasing Percentage of Registered Medical Practitioners in Hospital Authority(HA)'
+    text: 'Increasing Percentage of Registered Medical Practitioners in Hospital Authority'
   },
 	subtitle: {
-		text: 'Source：Annual Report of Medical Council of Hong Kong'
+		text: 'Source：Annual Report of The Medical Council of Hong Kong'
 	},
   xAxis: {
     categories: [
