@@ -15,6 +15,9 @@
     <link rel="icon" href="picture/healthcare_icon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="picture/healthcare_icon.png" type="image/x-icon" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         /* body {
                 color: #fff;
@@ -82,6 +85,12 @@
             /* background: #e3e9ee; */
         }
         
+        .data_page {
+            width: 80vw;
+            /* height: 100vh; */
+            /* background: #e3e9ee; */
+        }
+        
         .news_content {
             height: 380px;
             display: flex;
@@ -134,7 +143,12 @@
 </head>
 
 <body class="is-preload">
-
+    <!-- HighChart Javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <!-- HighChart Javascript -->
     <!-- Wrapper -->
     <div id="wrapper">
 
@@ -168,8 +182,8 @@
         <section id="banner" class="style2">
             <div class="inner">
                 <span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
+                    <img src="images/pic07.jpg" alt="" />
+                </span>
                 <header class="major">
                     <h1>Healthcare</h1>
                 </header>
@@ -192,6 +206,74 @@
                     <p>
                         text goes here
                     </p>
+                    <div class="data_page">
+                        <div class="data_content_box">
+                            <div class="data_content">
+                                <!--Chart of HAAllocation-->
+                                <section class="Chart">
+                                    <div id="HAAllocation" style="min-width:400px;height:400px"></div>
+                                    <script src="HealthCare/HAAllocation.js"></script>
+                                </section>
+                                <!--End of HA Allocation-->
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        The provided diagram shows data on budget allocation of Hospital Authority(HA) in yearly budget plan and actual spending starting from 2010 and till 2019. A glance at the graphs reveals that government actual overall spending never exceeds the budget
+                        plan, which makes both ends meet. On the contrary, the actual allocation of HA always surpass planned budget. As an overall trend, the percentage of HA allocation in overall budget remains between 9.92% to 11.67%.
+
+                    </p>
+
+                    <div class="data_page">
+                        <div class="data_content_box">
+                            <div class="data_content">
+                                <!--Chart of Medical-->
+                                <section class="Chart">
+                                    <div id="Medical" style="min-width:400px;height:400px"></div>
+                                    <script src="HealthCare/Medical.js"></script>
+
+                                </section>
+                                <!--End of Medical -->
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        text goes here
+                    </p>
+
+                    <div class="data_page">
+                        <div class="data_content_box">
+                            <div class="data_content">
+                                <!--Chart of Nursing-->
+                                <section class="Chart">
+                                    <div id="Nursing" style="min-width:400px;height:400px"></div>
+                                    <script src="HealthCare/Nursing.js"></script>
+
+                                </section>
+                                <!--End of Nursing -->
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        text goes here
+                    </p>
+
+                    <div class="data_page">
+                        <div class="data_content_box">
+                            <div class="data_content">
+                                <!--Pie Chart of Redundant Personnel-->
+                                <section class="Chart">
+                                    <div id="Personnel" style="min-width:400px;height:400px"></div>
+                                    <script src="HealthCare/Personnel.js"></script>
+                                </section>
+                                <!--End of Redundant Personnel-->
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        text goes here
+                    </p>
+
                     <div class="news_page">
                         <div class="news_box container">
                             <div class="news_content_box">
