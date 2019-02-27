@@ -1,6 +1,7 @@
 
 Highcharts.chart('Nursing', {
   chart: {
+	  backgroundColor: "#2a2f48",
     type: 'column'
   },
   title: {
