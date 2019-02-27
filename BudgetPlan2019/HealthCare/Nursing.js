@@ -4,10 +4,10 @@ Highcharts.chart('Nursing', {
     type: 'column'
   },
   title: {
-    text: 'Declining Percentage of Registered and Enrolled Nurses in Hospital Authority(HA)'
+    text: 'Declining Percentage of Registered and Enrolled Nurses in Hospital Authority'
   },
 	subtitle: {
-		text: 'Source：Nursing Council of Hong Kong'
+		text: 'Source：The Nursing Council of Hong Kong'
 	},
   xAxis: {
     categories: [
