@@ -11,6 +11,9 @@ Highcharts.getOptions().plotOptions.pie.colors = (function () {
 }());
 // 初始化图表
 var chart = Highcharts.chart('Personnel', {
+	chart: {
+		backgroundColor: "#2a2f48"
+  },
 	title: {
 		text: 'Distribution of Full-time Equivalent Staff 2017-2018'
 	},
