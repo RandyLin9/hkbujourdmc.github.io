@@ -57,7 +57,7 @@ Highcharts.chart('HAAllocation', {
   series: [{
 		name: 'Government yearly spend (plan)',
 		color: 'rgba(165,170,217,1)',
-		data: [3172, 3711, 3937, 4400, 4112, 4408, 4869, 4914,5696],
+		data: [3172, 3711, 3937, 4400, 4112, 4408, 4869, 4914,5696,6078],
 		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
 			valuePrefix: '$',
 			valueSuffix: ' Billion'
@@ -67,7 +67,7 @@ Highcharts.chart('HAAllocation', {
 	}, {
 		name: 'Government yearly spend (actual)',
 		color: 'rgba(126,86,134,.9)',
-		data: [3014, 3640, 3773, 4335, 3962, 4356, 4621],
+		data: [3014, 3640, 3773, 4335, 3962, 4356, 4621,4709],
 		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
 			valuePrefix: '$',
 			valueSuffix: ' Billion'
@@ -77,7 +77,7 @@ Highcharts.chart('HAAllocation', {
 	}, {
 		name: 'HA allocation (plan)',
 		color: 'rgba(248,161,63,1)',
-		data: [341, 368, 411, 451, 480, 499, 516, 553,624],
+		data: [341, 368, 411, 451, 480, 499, 516, 553,624,699],
 		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
 			valuePrefix: '$',
 			valueSuffix: ' Billion'
@@ -88,7 +88,7 @@ Highcharts.chart('HAAllocation', {
 	}, {
 		name: 'HA allocation (actual)',
 		color: 'rgba(186,60,61,.9)',
-		data: [344, 386, 529, 463, 498, 615, 534],
+		data: [344, 386, 529, 463, 498, 615, 534,564],
 		tooltip: {
 			valuePrefix: '$',
 			valueSuffix: ' Billion'
