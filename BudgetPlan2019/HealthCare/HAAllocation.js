@@ -10,10 +10,10 @@ Highcharts.chart('HAAllocation', {
     type: 'column'
   },
   title: {
-    text: 'Budget Allocation of Hospital Authority in Ten Years'
+    text: 'Budget Allocation of Hospital Authority (HA) in Ten Years'
   },
 	subtitle: {
-		text: 'Source：Hong Kong Budget Plan'
+		text: 'Source：Hong Kong Budget'
 	},
   xAxis: {
     categories: [
@@ -35,6 +35,7 @@ Highcharts.chart('HAAllocation', {
       text: 'Amount'
     }
   }, {
+		min: 0,
     title: {
       text: 'Percentage of HA allocation in overall budget'
     },

@@ -12,7 +12,7 @@ Highcharts.getOptions().plotOptions.pie.colors = (function () {
 // 初始化图表
 var chart = Highcharts.chart('Personnel', {
 	title: {
-		text: 'No. of Full-time Equivalent Staff 2017-2018'
+		text: 'Distribution of Full-time Equivalent Staff 2017-2018'
 	},
 	subtitle: {
 		text: 'Source: Hospital Authority Annual Report 2017-2018'

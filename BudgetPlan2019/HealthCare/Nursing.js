@@ -4,7 +4,7 @@ Highcharts.chart('Nursing', {
     type: 'column'
   },
   title: {
-    text: 'Num of Registered and Enrolled Nurses in Hospital Authority'
+    text: 'Declining Percentage of Registered and Enrolled Nurses in Hospital Authority(HA)'
   },
 	subtitle: {
 		text: 'Source：Nursing Council of Hong Kong'
@@ -29,6 +29,7 @@ Highcharts.chart('Nursing', {
       text: 'Amount'
     }
   }, {
+		min: 0,
     title: {
       text: 'Percentage of registered and enrolled nurses serving in HA'
     },
@@ -73,7 +74,7 @@ Highcharts.chart('Nursing', {
 		pointPlacement: 0,
 	},{
 		type: 'spline',
-		name: 'Percen',
+		name: 'Percentage',
 		data: [50.52,49.65,48.66,47.83,47.59,47.37,47.15,46.93,46.06,46.03],
 		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
 			valueSuffix: '%'
