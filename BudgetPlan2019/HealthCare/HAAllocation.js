@@ -7,6 +7,7 @@ textColor:"#C0C0C0",contrastTextColor:"#F0F0F3",maskColor:"rgba(255,255,255,0.3)
 //# sourceMappingURL=dark-unica.js.map
 Highcharts.chart('HAAllocation', {
   chart: {
+backgroundColor: "#2a2f48",
     type: 'column'
   },
   title: {
