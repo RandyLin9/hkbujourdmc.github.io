@@ -82,7 +82,7 @@ window.onload = function() {
         animationEnabled: true,
         theme: "dark2",
         title: {
-            text: "Social Worker bttween 2013-2019"
+            text: "Social Worker between 2013-2019"
         },
         axisY: {
             title: "Number of Social Worker",
