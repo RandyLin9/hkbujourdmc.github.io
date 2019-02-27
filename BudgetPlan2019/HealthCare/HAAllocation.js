@@ -33,7 +33,7 @@ backgroundColor: "#2a2f48",
   yAxis: [{
     min: 0,
     title: {
-      text: 'Amount'
+      text: 'Amount(Billion)'
     }
   }, {
 		min: 0,
@@ -99,7 +99,7 @@ backgroundColor: "#2a2f48",
 	},{
 		type: 'spline',
 		name: 'Percentage',
-		data: [10.76,9.92,10.45,10.24,11.67,11.31,10.60,11.25,10.95],
+		data: [10.76,9.92,10.45,10.24,11.67,11.31,10.60,11.25,10.95,11.50],
 		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
 			valueSuffix: '%'
 		},
