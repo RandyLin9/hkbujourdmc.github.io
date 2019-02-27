@@ -13,7 +13,7 @@ Highcharts.chart('HAAllocation', {
     text: 'Budget Allocation of Hospital Authority (HA) in Ten Years'
   },
 	subtitle: {
-		text: 'Source：Hong Kong Budget'
+		text: 'Source：Hong Kong Budget(2010-2019)'
 	},
   xAxis: {
     categories: [
