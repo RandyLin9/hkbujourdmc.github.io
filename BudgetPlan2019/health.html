@@ -409,85 +409,22 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        var newButton = document.getElementById('newButton');
-        var p_one = document.getElementById('p_one');
-        var p_two = document.getElementById('p_two');
-        var p_three = document.getElementById('p_three');
-        var p_four = document.getElementById('p_four');
-        var p_five = document.getElementById('p_five');
-        var button_img = document.querySelectorAll('.button_img');
-        var p_class = document.querySelectorAll('.p_class');
-        newButton.addEventListener('click', function(ev) {
-            let Target = ev.target || window.event.target;
-            switch (Target.className) {
-                case 'pic_one':
-                    for (var i = 0; i < p_class.length; i++) {
-                        p_class[i].setAttribute('class', 'onhide');
-                    }
-                    p_one.setAttribute('class', 'onShow');
-                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
-                        for (var i = 0; i < button_img.length; i++) {
-                            button_img[i].setAttribute('class', 'button_img');
-                        }
-                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
-                    }
-                    // console.log(Target.parentNode.className.indexOf('button_img'));
-                    break;
-                case 'pic_two':
-                    for (var i = 0; i < p_class.length; i++) {
-                        p_class[i].setAttribute('class', 'onhide');
-                    }
-                    p_two.setAttribute('class', 'onShow');
-                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
+    <<<<<<< HEAD <script>
+        var newButton = document.getElementById('newButton'); var p_one = document.getElementById('p_one'); var p_two = document.getElementById('p_two'); var p_three = document.getElementById('p_three'); var p_four = document.getElementById('p_four'); var p_five
+        = document.getElementById('p_five'); var button_img = document.querySelectorAll('.button_img'); var p_class = document.querySelectorAll('.p_class'); newButton.addEventListener('click', function(ev) { let Target = ev.target || window.event.target;
+        switch (Target.className) { case 'pic_one': for (var i = 0; i
+        < p_class.length; i++) { p_class[i].setAttribute( 'class', 'onhide'); } p_one.setAttribute( 'class', 'onShow'); if (Target.parentNode.className.indexOf( 'button_img')>= 0) { for (var i = 0; i
+            < button_img.length; i++) { button_img[i].setAttribute( 'class', 'button_img'); } Target.parentNode.setAttribute( 'class', 'img_opacity button_img'); } // console.log(Target.parentNode.className.indexOf( 'button_img'));
+                break; case 'pic_two': for (var i=0 ; i < p_class.length; i++) { p_class[i].setAttribute( 'class', 'onhide'); } p_two.setAttribute( 'class', 'onShow'); if (Target.parentNode.className.indexOf( 'button_img')>= 0) { for (var i = 0; i
+                < button_img.length; i++) { button_img[i].setAttribute( 'class', 'button_img'); } Target.parentNode.setAttribute( 'class', 'img_opacity button_img'); } break; case 'pic_three': for (var i=0 ; i < p_class.length; i++)
+                    { p_class[i].setAttribute( 'class', 'onhide'); } p_three.setAttribute( 'class', 'onShow'); if (Target.parentNode.className.indexOf( 'button_img')>= 0) { for (var i = 0; i
+                    < button_img.length; i++) { button_img[i].setAttribute( 'class', 'button_img'); } Target.parentNode.setAttribute( 'class', 'img_opacity button_img'); } break; case 'pic_four': for (var i=0 ; i < p_class.length;
+                        i++) { p_class[i].setAttribute( 'class', 'onhide'); } p_four.setAttribute( 'class', 'onShow'); if (Target.parentNode.className.indexOf( 'button_img')>= 0) { for (var i = 0; i
+                        < button_img.length; i++) { button_img[i].setAttribute( 'class', 'button_img'); } Target.parentNode.setAttribute( 'class', 'img_opacity button_img'); } break; case 'pic_five': for (var i=0 ; i < p_class.length;
+                            i++) { p_class[i].setAttribute( 'class', 'onhide'); } p_five.setAttribute( 'class', 'onShow'); if (Target.parentNode.className.indexOf( 'button_img')>= 0) { for (var i = 0; i
+                            < button_img.length; i++) { button_img[i].setAttribute( 'class', 'button_img'); } Target.parentNode.setAttribute( 'class', 'img_opacity button_img'); } break; } }) </script>
 
-                        for (var i = 0; i < button_img.length; i++) {
-                            button_img[i].setAttribute('class', 'button_img');
-                        }
-                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
-                    }
-                    break;
-                case 'pic_three':
-                    for (var i = 0; i < p_class.length; i++) {
-                        p_class[i].setAttribute('class', 'onhide');
-                    }
-                    p_three.setAttribute('class', 'onShow');
-                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
-                        for (var i = 0; i < button_img.length; i++) {
-                            button_img[i].setAttribute('class', 'button_img');
-                        }
-                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
-                    }
-                    break;
-                case 'pic_four':
-                    for (var i = 0; i < p_class.length; i++) {
-                        p_class[i].setAttribute('class', 'onhide');
-                    }
-                    p_four.setAttribute('class', 'onShow');
-                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
-                        for (var i = 0; i < button_img.length; i++) {
-                            button_img[i].setAttribute('class', 'button_img');
-                        }
-                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
-                    }
-                    break;
-                case 'pic_five':
-                    for (var i = 0; i < p_class.length; i++) {
-                        p_class[i].setAttribute('class', 'onhide');
-                    }
-                    p_five.setAttribute('class', 'onShow');
-                    if (Target.parentNode.className.indexOf('button_img') >= 0) {
-                        for (var i = 0; i < button_img.length; i++) {
-                            button_img[i].setAttribute('class', 'button_img');
-                        }
-                        Target.parentNode.setAttribute('class', 'img_opacity button_img');
-                    }
-                    break;
-            }
-
-        })
-    </script>
-
+                                ======= >>>>>>> c22e72c831a81c924c33f212226bdd54407e2cfb
 </body>
 
 </html>
