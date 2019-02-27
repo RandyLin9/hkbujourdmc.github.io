@@ -58,18 +58,12 @@ Highcharts.chart('Nursing', {
 		name: 'Nurses serving in other organisations',
 		color: 'rgba(248,161,63,1)',
 		data: [19119,20145,21208,22797,24030,25288,26670,27802,29251,30612],
-		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
-			valueSuffix: ' 人'
-		},
 		pointPadding: 0.3,
 		pointPlacement: 0,
 	}, {
 		name: 'Nurses serving in HA ',
 		color: 'rgba(186,60,61,.9)',
 		data: [19522,19866,20102,20901,21816,22759,23791,24587,24980,26111],
-		tooltip: {  // 为当前数据列指定特定的 tooltip 选项
-			valueSuffix: ' 人'
-		},
 		pointPadding: 0.3,
 		pointPlacement: 0,
 	},{
